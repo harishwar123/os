@@ -7,3 +7,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+char* readline();
+char** split_string(char*);
+// Complete the catAndMice function below.
+//  remember to make sure the string static or allocate on the heap. for example,
+// static char str[] = "hello world";
+// return str;
+//
