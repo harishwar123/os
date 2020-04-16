@@ -29,3 +29,11 @@ FILE* fptr = fopen(getenv("OUTPUT_PATH"), "w");
 char* q_endptr;
 char* q_str = readline();
 int q = strtol(q_str, &q_endptr, 10);
+if (q_endptr == q_str || *q_endptr != '\0') { exit(EXIT_FAILURE); }
+
+for (int q_rep = 0; q_rep < q; q_rep++) {
+char** xyz = split_string(readline());
+
+char* x_endptr;
+char* x_str = xyz[0];
+int x = strtol(x_str, &x_endptr, 10);
