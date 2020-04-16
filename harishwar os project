@@ -22,3 +22,10 @@ char** split_string(char*);
 
 char* catAndMice(int x, int y, int z) {
 }
+int main()
+{
+FILE* fptr = fopen(getenv("OUTPUT_PATH"), "w");
+
+char* q_endptr;
+char* q_str = readline();
+int q = strtol(q_str, &q_endptr, 10);
