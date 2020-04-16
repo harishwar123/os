@@ -14,3 +14,11 @@ char** split_string(char*);
 // static char str[] = "hello world";
 // return str;
 //
+// OR
+//
+// char* str = "hello world";
+// return str;
+//
+
+char* catAndMice(int x, int y, int z) {
+}
