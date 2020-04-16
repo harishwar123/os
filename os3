@@ -1,0 +1,38 @@
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+char* readline();
+char** split_string(char*);
+// Complete the catAndMice function below.
+//  remember to make sure the string static or allocate on the heap. for example,
+// static char str[] = "hello world";
+// return str;
+//
+// OR
+//
+// char* str = "hello world";
+// return str;
+//
+
+char* catAndMice(int x, int y, int z) {
+}
+int main()
+{
+FILE* fptr = fopen(getenv("OUTPUT_PATH"), "w");
+
+char* q_endptr;
+char* q_str = readline();
+int q = strtol(q_str, &q_endptr, 10);
+
+if (q_endptr == q_str || *q_endptr != '\0') { exit(EXIT_FAILURE); }
+
+for (int q_rep = 0; q_rep < q; q_rep++) {
+char**
